@@ -1,0 +1,139 @@
+.topicos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-background-terciario);
+    align-items: center;
+}
+
+.topicos__links {
+    background: var(--cor-background-secundario);
+    padding: 1rem 0.5rem;
+}
+
+.topicos__links__titulo {
+    padding: 2rem 0rem;
+    text-align: center;
+    color: var(--cor-primaria);
+    font-weight: 300;
+    font-size: var(--font-tamanho-medio);
+}
+
+.topicos__lista {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.topicos__item {
+    padding: 1rem 1rem;
+}
+
+.topicos__contato {
+    align-items: center;
+    margin: 2rem 1.5rem;
+}
+
+.topicos__contato__titulo,
+.topicos__contato__texto {
+    background: var(--cor-background-secundario);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.topicos__contato__titulo {
+    font-weight: 500;
+    font-size: var(--font-tamanho-grande);
+}
+
+.topicos__contato__texto {
+    margin: 2rem 0rem 2.5rem 0rem;
+    font-weight: 300;
+    font-size: var(--font-tamanho-medio);
+}
+
+.topicos__contato__botao {
+    border: solid 1px var(--cor-terciaria);
+    border-radius: 24px;
+    padding: 1rem;
+    width: 90%;
+    color: var(--cor-terciaria);
+    font-size: var(--font-tamanho-pequeno);
+    font-weight: 400;
+}
+
+.topicos__contato__botao::placeholder {
+    font-family: var(--font-primaria);
+    font-size: var(--font-tamanho-medio);
+    color: var(--cor-terciaria);
+    background: url('../assets/Email.svg') no-repeat;
+    padding-left: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .topicos__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3%;
+        width: 100vw;
+    }
+
+    .card__botoes {
+        width: 70%;
+    }
+
+    .botoes {
+        margin: 0% 15%;
+    }
+
+    .botoes__ancora {
+        padding: 24px 32px;
+    }
+
+    .topicos__contato {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topicos__contato__titulo {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .topicos__contato__texto {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .card__botoes {
+        width: 70%;
+    }
+
+    .topicos__lista {
+        align-items: center;
+    }
+
+    .topicos__links__titulo {
+        margin-top: 3rem;
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    .card__botoes {
+        margin: 2rem;
+    }
+
+    .topicos__item {
+        font-size: 24px;
+    }
+
+    .topicos__contato,
+    .topicos__contato__botao {
+        margin: 4rem 0;
+    }
+}
